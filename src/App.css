@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body {
+	background-color: #040d21;
+    color: #fefefe;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2 {
+	text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+	font-size: 2.5em;
+	margin-top: 50px;
+    margin-bottom: 50px;
+	background: -webkit-linear-gradient(124deg, #a2facf 0%, #64acff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+	font-size: 1.2em;
+	color: #d0d2d6;
 }
-
-.App-link {
-  color: #61dafb;
+.item-grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+	width: 70%;
+    margin: auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2em;
+}
+.card {
+	text-align: center;
+	width: 300px;
+	border-radius: 5px;
+	padding: 1em;
+	box-shadow: 0 2px 8px 5px rgb(99 99 99 / 50%);
+	background-color: #19253e;
+	min-height: 150px;
+}
+.answer {
+	margin-bottom: 20px;
+	color: #ff7200;
+	font-weight: bold;
+}
+.location, .provider {
+	font-size: 14px;
+}
+form {
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+input[type="text"], button, select {
+	padding: 8px;
+	margin-left: 10px;
+}
+select {
+	appearance: none;
+    background: url(data:image/svg+xml;utf8,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%27100%27 height=%27100%27 fill=%27%238C98F2%27><polygon points=%270,0 100,0 50,50%27/></svg>) no-repeat;
+    background-size: 12px;
+    background-position: calc(100% - 5px) center;
+    background-color: #ffffff;
+    width: 60px;
+    padding: 10px;
 }
